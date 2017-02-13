@@ -1,0 +1,367 @@
+/*the start of top_bar*/
+
+.top_bar {
+    width: 100%;
+    height: 40px;
+    background-color: #2C3E50;
+}
+
+.top_bar_inside {}
+
+.top_bar_left ul li {
+    list-style: none;
+    float: left;
+    color: #FFF;
+    line-height: 40px;
+    border-right: 1px solid #17202A;
+    border-left: 1px solid #374D63;
+    padding: 0px 15px 0px 35px;
+}
+
+.top_bar_left_icon1 {
+    background: url("../images/top_bar_left_icon.png") top left no-repeat;
+    background-position: -5px -76px;
+}
+
+.top_bar_left_icon2 {
+    background: url("../images/top_bar_left_icon.png") top left no-repeat;
+    background-position: -5px -42px;
+}
+
+.top_bar_left_icon3 {
+    background: url("../images/top_bar_left_icon.png") top left no-repeat;
+    background-position: -5px -7px;
+}
+
+.top_bar_left_icon3 a {
+    color: #1FBEA2;
+}
+
+.top_bar_left_icon4 {
+    background: url("../images/top_bar_left_icon.png") top left no-repeat;
+    background-position: -5px -7px;
+}
+
+.top_bar_right {
+    float: right;
+}
+
+.top_bar_right ul li {
+    list-style-type: none;
+    float: left;
+    line-height: 40px;
+    padding: 0px 15px;
+    border-right: 1px solid #17202A;
+    border-left: 1px solid #374D63;
+}
+
+
+/*the end of top_bar*/
+
+
+/*the start of nav_bar*/
+
+.nav_bar {
+    height: 90px;
+    line-height: 90px;
+}
+
+.nav_bar img {
+    vertical-align: middle;
+}
+
+.nav {
+    margin-right: -15px;
+}
+
+.nav ul li {
+    float: left;
+    padding: 0px 15px;
+}
+
+.nav ul li a {
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/*the end of nav_bar*/
+
+
+/*the start of slider*/
+
+.slider {
+    height: 700px;
+    background: url("../images/slider1.jpg") no-repeat;
+    background-position: center center;
+}
+
+.slider_content {
+    color: #FFF;
+    text-align: center;
+    padding-top: 270px;
+    font-weight: bold;
+}
+
+.slider_content h1 {
+    font-size: 42px;
+    line-height: 60px;
+}
+
+.slider_content p {
+    font-size: 26px;
+    line-height: 60px;
+}
+
+.slider_content a {
+    font-size: 18px;
+    display: inline-block;
+    padding: 15px;
+    border: 2px solid #FFF;
+    margin: 30px 20px;
+    color: #FFF;
+    border-radius: 5px;
+}
+
+.arrow_left,
+.arrow_right {
+    height: 80px;
+    width: 80px;
+    background-color: #000;
+    filter: alpha(opacity=20);
+    /* ie 有效*/
+    -moz-opacity: 0.2;
+    /* Firefox  有效*/
+    opacity: 0.2;
+    /* 通用，其他浏览器  有效*/
+    line-height: 95px;
+    text-align: center;
+}
+
+.arrow_left {
+    float: left;
+    margin-top: -80px;
+}
+
+.arrow_right {
+    float: right;
+    margin-top: -80px;
+}
+
+
+/*the end of slider*/
+
+
+/*the start of input_area*/
+
+.input_area {
+    border-top: 1px solid #888;
+    height: 104px;
+    background-color: #2C3E50;
+    color: white;
+}
+
+.input_area_left {
+    width: 168px;
+    height: 80px;
+    border-right: 1px solid #888;
+    font-size: 18px;
+    padding-top: 24px;
+}
+
+.input_area_left span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.input_area_right {
+    line-height: 104px;
+    font-size: 20px;
+}
+
+.input_area_right input {
+    width: 310px;
+    height: 34px;
+    margin: 0px 18px;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+}
+
+.input_area_right a {
+    display: inline-block;
+    font-size: 20px;
+    background-color: #1DD2AF;
+    color: #FFF;
+    line-height: 44px;
+    padding: 0px 20px;
+}
+
+
+/*the end of input_area*/
+
+
+/*the start of special_offers*/
+
+.content_block_title{
+    padding-top:80px;
+    height: 120px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.special_offers {   
+    height: 635px;
+}
+
+.special_offers>div{
+   width: 100%;
+   overflow: hidden;
+}
+.special_offers_figure{
+    width: 1800px;
+    position: relative;
+    left: 50%;
+    margin-left: -900px;
+}
+
+.special_offers_figure ul li{
+    list-style: none;
+    float: left;
+    width: 266px;
+    padding:5px;
+    height: 250px;
+    margin:12px;
+    background: #EEEEEE url("../images/arrow_down.png") no-repeat 238px 227px;
+}
+
+.special_offers_figure ul li div{
+    padding: 8px;
+}
+
+
+/*the end of special_offers*/
+
+
+/*the start of holidays_type*/
+
+.holidays_type {
+    background: url("../images/holiday_type.jpg") no-repeat;
+    background-position: center center;
+    height: 518px;
+}
+
+.holidays_type .content_block_title{
+    color: #FFF;
+}
+
+.holidays_type_figure ul li{
+    list-style: none;
+    float: left;
+    height: 208px;
+    width: 158px;
+    margin:18px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+
+/*the end of holidays_type*/
+
+
+/*the start of happy_clients*/
+
+.happy_clients {
+    height: 462px;
+}
+
+.happy_clients{
+    width: 100%;
+    overflow: hidden;
+}
+
+.happy_clients_figure{
+    width: 1800px;
+    position: relative;
+    left: 50%;
+    margin-left:-900px;
+}
+
+.happy_clients_figure ul li{
+    list-style: none;
+    float: left;
+    padding: 30px;
+    margin:10px;
+    height: 80px;
+    width: 518px;
+    border:1px solid #ccc;
+    border-top: 5px solid #1DD2AF;
+}
+
+
+/*the end of happy_clients*/
+
+
+/*the start of footer*/
+
+.footer{
+    background-color: #2C3E50;
+    height: 446px;
+
+}
+
+.footer_bar{
+    padding-top: 60px;
+    height: 230px;
+    border-bottom: 1px solid #394C5F;
+}
+
+.footer_bar ul li{
+    width: 260px;
+    height: 230px;
+    float: left;
+    color: #FFF;
+    padding-right: 33px;
+    line-height: 26px;
+}
+
+.footer_bar ul li h2{
+    color:#1DD2AF;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 50px;
+}
+
+.footer_nav{
+    text-align: center; 
+    width: 560px;
+    margin:0px auto;
+    padding-top:30px; 
+    color: white;
+}
+
+.footer_nav ul li{
+    list-style-type: none;
+    float: left;
+    color: white;
+
+}
+
+.footer_nav ul li a{
+    color: white;
+    padding:15px;
+    line-height: 30px;
+}
+
+.to_top{
+    margin-top: 37px;
+
+}
+
+
+/*the end of footer*/
