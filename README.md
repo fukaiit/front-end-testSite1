@@ -5,4 +5,3 @@
 * 用原生js简单实现了轮播图和回到顶部（兼容IE8+和Chrome）
 * 封装了事件处理对象EventUtil.js
 * 首页效果图
-![](http://i1.piimg.com/567571/8de667186d4fa527.png)
