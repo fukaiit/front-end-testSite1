@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>VOYAGE</title>
     <link rel="stylesheet" type="text/css" href="style/reset.css">
     <link rel="stylesheet" type="text/css" href="style/index.css">
@@ -59,15 +61,27 @@
     </header>
     <section>
         <div class="slider">
-            <div class="slider_content">
-                <h1>TO TRAVEL IS TO LIVE</h1>
-                <p>you do not need magic to disapper.all you need is a destination.</p>
-                <a href="" class="active">SHOW ON THE MAP</a>
-                <a href="">MORE INFO</a>
-            </div>
+            <ul>
+                <li class="active"><img src="images/slider1.jpg" alt="">
+                    <div class="slider_content">
+                        <h1>TO TRAVEL IS TO LIVE</h1>
+                        <p>you do not need magic to disapper.all you need is a destination.</p>
+                        <a href="" class="active">SHOW ON THE MAP</a>
+                        <a href="">MORE INFO</a>
+                    </div>
+                </li>
+                <li><img src="images/slider2.jpg" alt="">
+                    <div class="slider_content">
+                        <h1>TO TRAVEL TO AMERICAN</h1>
+                        <p>Canlifornia girl. Canlifornia girl Canlifornia girl Canlifornia girl.</p>
+                        <a href="" class="active">SHOW ON THE MAP</a>
+                        <a href="">MORE INFO</a>
+                    </div>
+                </li>
+            </ul>
             <div class="slider_nav">
-                <a class="arrow_left"><img src="images/arrow_left.png"></a>
-                <a class="arrow_right"><img src="images/arrow_right.png"></a>
+                <a class="arrow_left fl"><img src="images/arrow_left.png"></a>
+                <a class="arrow_right fr"><img src="images/arrow_right.png"></a>
             </div>
         </div>
         <!-- the end of slider -->
@@ -238,11 +252,28 @@
                     <li><a href="">BLOG</a></li>
                 </ul>
                 All rights reserved.All rights reserved.
-                <div class="to_top"><img src="images/to_top.png" alt=""></div>
+                <div id="toTop" class="to_top"><img src="images/to_top.png" alt=""></div>
             </div>
         </div>
     </footer>
     <!-- the end of footer -->
+    <script type="text/javascript" src="js/EventUtil.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript">
+    var toTop = document.getElementById('toTop');
+    EventUtil.addHandler(toTop, "click", function(event) {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        var interval = setInterval(function(event) {
+            document.documentElement.scrollTop -= scrollTop / 100;
+            document.body.scrollTop -= scrollTop / 100;
+            var currentScrollTop=document.documentElement.scrollTop || document.body.scrollTop
+            if (currentScrollTop < scrollTop / 1000) {
+                document.documentElement.scrollTop = document.body.scrollTop = 0;
+                clearInterval(interval);
+            }
+        }, 20);
+    });
+    </script>
 </body>
 
 </html>
