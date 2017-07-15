@@ -37,23 +37,22 @@ var EventUtil = {
             event.cancelBubble = true;
         }
     },
-    getRelatedTarget:function (event) {
+    getRelatedTarget: function(event) {
         if (event.relatedTarget) {
             return event.relatedTarget;
-        }else if (event.toElement) {
+        } else if (event.toElement) {
             return event.toElement;
-        }else if (event.fromElement) {
+        } else if (event.fromElement) {
             return event.fromElement;
-        }else{
+        } else {
             return null;
         }
     },
-    getButton:function (event) {
-        if (document.implementation.hasFeature("MouseEvents","2.0")) {
+    getButton: function(event) {
+        if (document.implementation.hasFeature("MouseEvents", "2.0")) {
             return event.button;
-        }
-        else{
-            switch(event.button) {
+        } else {
+            switch (event.button) {
                 case 0:
                 case 1:
                 case 3:
@@ -70,18 +69,18 @@ var EventUtil = {
             }
         }
     },
-    getWheelDelta:function (event) {
+    getWheelDelta: function(event) {
         if (event.wheelDelta) {
             //return (client.engine.opera&&client.engine.opera<9.5?-event.wheelDelta:event.wheelDelta);
             return event.wheelDelta;
-        }else{
-            return -event.detail*40;
+        } else {
+            return -event.detail * 40;
         }
     },
-    getCharCode:function (event) {
-        if (typeof event.charCode=="number") {
+    getCharCode: function(event) {
+        if (typeof event.charCode == "number") {
             return event.charCode;
-        }else{
+        } else {
             return event.keyCode;
         }
     }
